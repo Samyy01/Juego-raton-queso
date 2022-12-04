@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+canvas{
+    border: 0.7rem solid black
+}
+
+
+.botones{
+    background-color: black;
+    display: grid; /*display: grid te proporciona una cuadrícula de una sola columna*/
+    grid-template-columns: auto auto auto auto; /*depende de los numeros de auto k pongas cuantas columnas tienes*/
+}
+
+.btn{
+    margin: 0.2rem;
+    width: 6rem;
+    height: 4rem;
+    border: 1px solid rgb(168, 168, 168);
+    color:rgb(7, 255, 69);
+    display: flex; /*entre este y justify/align hacen que los numeros esten centrados*/
+    justify-content: center; /*horizontalmente*/
+    align-items: center; /*verticalmente*/
+    background-color: black;
+    transition: background-color ease-in 0.2s;
+}
+
+.btn:hover{
+    background-color:#cccc;
+}
+
+.btn:active {
+    transform: scale(0.80);
+    transition: 0,2s all;
+} 
